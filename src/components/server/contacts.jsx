@@ -4,7 +4,7 @@ import CardContact from "../cardContact";
 export default async function Contacts() {
     const {db, client} = await dbconnect()
     
-    const contacts = await db.collection('members').find().sort({nama: 1}).toArray()
+    
     console.log("-----------------------------------")
     console.log(contacts)
     client.close()
